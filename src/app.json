@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/sujun/sujun",
+    "pages/user-center/user-center"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#be8dbd",
+    "navigationBarTitleText": "夕宿夕君",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "tabBar": {
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index_default.png",
+        "selectedIconPath": "images/index_select.png"
+      },
+      {
+        "pagePath": "pages/sujun/sujun",
+        "text": "宿君录",
+        "iconPath": "images/record_default.png",
+        "selectedIconPath": "images/record_select.png"
+      },
+      {
+        "pagePath": "pages/user-center/user-center",
+        "text": "个人中心",
+        "iconPath": "images/user_default.png",
+        "selectedIconPath": "images/user_select.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
