@@ -31,7 +31,6 @@ Component({
         width: (screenWidth - (screenWidth - right)*2 - width) + 'px',
         height: height + 'px',
       })
-      console.log(wx.getMenuButtonBoundingClientRect(), wx.getSystemInfoSync());
     }
   },
 

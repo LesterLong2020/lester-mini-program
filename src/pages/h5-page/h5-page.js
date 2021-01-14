@@ -1,23 +1,20 @@
-// pages/sujun/sujun.js
+// pages/h5-page/h5-page.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title: '',
-    articleList: [{
-      id: 1,
-      name: '清平乐·重遇何期',
-      url: 'https://mp.weixin.qq.com/s/EO-IavTDA1MGap-cPn-xnw'
-    }]
+    url: '',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function ({ url }) {
+    this.setData({
+      url
+    })
   },
 
   /**
@@ -31,14 +28,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
-      this.getTabBar().setData({
-          selected: 1
-      });
-      this.setData({
-        title: this.getTabBar().data.list[1].text
-      });
-    }
+
   },
 
   /**
@@ -74,12 +64,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  goPublicArticle (e) {
-    const { url } = e.currentTarget.dataset;
-    wx.navigateTo({
-      url: `/pages/h5-page/h5-page?url=${url}`,
-    })
-}
+  }
 })

@@ -1,14 +1,10 @@
 <!--index.wxml-->
-<navigation title="夕宿兮君的首页" show-back="{{false}}" show-home="{{false}}" />
+<navigation title="{{title}}" show-back="{{false}}" show-home="{{false}}" />
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  <image class="bg-img" src="/images/bg5.png" />
+ <view class="article-list">
+   <view class="article-item" wx:for="{{articleList}}" wx:key="id" data-url="{{item.url}}" bindtap="goPublicArticle">
+     {{item.name}}
+   </view>
+ </view>
 </view>

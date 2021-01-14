@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "navigation": "/components/navigation/navigation"
+    "navigation": "/components/navigation/navigation",
+    "cell-group": "/miniprogram_npm/weui-miniprogram/cells/cells",
+    "cell": "/miniprogram_npm/weui-miniprogram/cell/cell"
   }
 }

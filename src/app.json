@@ -1,9 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
     "pages/sujun/sujun",
-    "pages/user-center/user-center"
+    "pages/user-center/user-center",
+    "pages/h5-page/h5-page"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -18,7 +18,8 @@
     }
   },
   "tabBar": {
-    "selectedColor": "#d81e06",
+    "custom": true,
+    "selectedColor": "#D81E06",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -28,7 +29,7 @@
       },
       {
         "pagePath": "pages/sujun/sujun",
-        "text": "宿君录",
+        "text": "诗词文录",
         "iconPath": "images/record_default.png",
         "selectedIconPath": "images/record_select.png"
       },
@@ -41,5 +42,8 @@
     ]
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  }
 }

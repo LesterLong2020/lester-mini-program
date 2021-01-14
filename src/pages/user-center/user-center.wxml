@@ -1,2 +1,34 @@
 <!--pages/user-center/user-center.wxml-->
-<navigation title="个人中心" show-back="{{false}}" show-home="{{false}}" />
+<navigation title="{{title}}" show-back="{{false}}" show-home="{{false}}" />
+<view class="container">
+  <image class="bg-img" src="/images/bg1.png" />
+  <view class="user-wrap">
+    <image class="user-bg" src="/images/user_bg.png" />
+    <view class="user-content">
+      <button 
+        wx:if="{{!hasUserInfo && canIUse}}" 
+        open-type="getUserInfo"
+        bindgetuserinfo="getUserInfo"
+        class="get-btn"
+      >获取头像昵称</button>
+      <block wx:else>
+        <image class="user-avatar" src="{{userInfo.avatarUrl}}" />
+        <view class="user-info">
+          <view class="user-name">{{userInfo.nickName}}</view>
+          <view class="user-addr">{{userInfo.province}} {{userInfo.city}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+  
+  <view class="content-wrap">
+    <cell-group ext-class="cell-wrap">
+      <cell data-page="coupon" class="cell-item" link hover value="我的简历" bindtap="jump">
+        <image class="cell-icon" slot="icon" src="/images/resume.png" alt=""></image>
+      </cell>
+      <cell data-page="coupon" class="cell-item" link hover value="少司命" bindtap="jump">
+        <image class="cell-icon" slot="icon" src="/images/feather.png" alt=""></image>
+      </cell>
+    </cell-group>
+  </view>
+</view>

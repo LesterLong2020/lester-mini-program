@@ -1,1 +1,36 @@
 /* pages/sujun/sujun.wxss */
+
+page {
+  height: calc(100% - 100rpx);
+}
+
+.container {
+  position: relative;
+}
+
+.container .bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.container .article-list {
+  position: relative;
+  z-index: 10;
+  margin-top: 50rpx;
+  text-align: center;
+}
+
+.article-list .article-item:first-child {
+  border-top: 1rpx solid rgba(0, 0, 0, 0.33);
+}
+
+.article-list .article-item {
+  height: 80rpx;
+  line-height: 80rpx;
+  color: blue;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.33);
+}
