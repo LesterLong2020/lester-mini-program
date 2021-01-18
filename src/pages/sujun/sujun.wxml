@@ -4,8 +4,8 @@
 <view class="container">
   <image class="bg-img" src="/images/bg.png" />
   <view class="article-list">
-    <view class="article-item" wx:for="{{articleList}}" wx:key="id" data-url="{{item.url}}" bindtap="goPublicArticle">
-     {{item.name}}
+    <view class="article-item" wx:for="{{poetryList}}" wx:key="id" data-index="{{index}}" bindtap="goPoetryDetail">
+     {{item.title}}
     </view> 
   </view>
 </view>

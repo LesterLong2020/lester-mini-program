@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/sujun/sujun",
     "pages/user-center/user-center",
-    "pages/h5-page/h5-page"
+    "pages/h5-page/h5-page",
+    "pages/poetry/poetry"
   ],
   "window": {
     "backgroundTextStyle": "light",

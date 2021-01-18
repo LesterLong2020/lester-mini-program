@@ -1,4 +1,4 @@
-// pages/sujun/sujun.js
+// pages/poetry/poetry.js
 
 import poetryList from "../../assets/poetry";
 
@@ -8,15 +8,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-    title: '',
-    poetryList
+    poetry: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function ({ index = 0 }) {
+    this.setData({
+      poetry: poetryList[index]
+    })
   },
 
   /**
@@ -30,14 +31,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
-      this.getTabBar().setData({
-          selected: 1
-      });
-      this.setData({
-        title: this.getTabBar().data.list[1].text
-      });
-    }
+
   },
 
   /**
@@ -73,12 +67,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  goPoetryDetail (e) {
-    const { index } = e.currentTarget.dataset;
-    wx.navigateTo({
-      url: `/pages/poetry/poetry?index=${index}`,
-    })
   }
 })

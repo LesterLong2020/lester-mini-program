@@ -35,6 +35,22 @@ Page({
             id: 7,
             name: '移动端适配',
             url: 'https://mp.weixin.qq.com/s/J6kSSf0oh78Xx8QCv3a5ng',
+        }, {
+            id: 8,
+            name: 'this指向',
+            url: 'https://mp.weixin.qq.com/s/SxPVg701yjehbLIIJwGpxQ',
+        }, {
+            id: 9,
+            name: '前端模块化（CommonJS、AMD、CMD）',
+            url: 'https://mp.weixin.qq.com/s/UPt-scZYkrkiazkT6Ohbjg',
+        }, {
+            id: 10,
+            name: 'require和import的区别',
+            url: 'https://mp.weixin.qq.com/s/ga_YfGSkuBEdptSUhx1Z4g',
+        }, {
+            id: 11,
+            name: 'JS中判断数据类型的4种方法',
+            url: 'https://mp.weixin.qq.com/s/RF38hDiFTXuxttBJHvpz3Q',
         }]
     },
 
